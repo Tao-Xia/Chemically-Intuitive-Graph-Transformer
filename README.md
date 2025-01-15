@@ -30,3 +30,41 @@ nae = 6
 # 4. define the active orbital of the molecule, same as XMVB active orbital input (like $Orb part, but just active orbital)
 active_orbital =  [5,6,4,2,1,3]
 ```
+
+You can write VB structure by yourself, same as XMVB $Str input, but just the active active.
+CIGT/loader/predict_vb.py
+```python
+# 1. define the molecule (xyz format and gamess format are supported)
+molecule = """
+C        -0.545879        1.285390        0.000006
+C         0.840247        1.115444       -0.000011
+C        -1.386138        0.169949       -0.000006
+C         1.386138       -0.169959        0.000037
+C        -0.840246       -1.115442       -0.000016
+C         0.545876       -1.285390       -0.000007
+H        -0.970539        2.285347        0.000018
+H         1.493900        1.983187       -0.000017
+H        -2.464448        0.302182       -0.000027
+H         2.464459       -0.302140        0.000051
+H        -1.493909       -1.983181       -0.000012
+H         0.970553       -2.285342       -0.000034
+"""     
+# 2. define the valence bond structure space
+# If you want predict the assigned vb structures, you have to write the structure by yourself, same as XMVB $Str input, but just the active active
+vb_str_space = "FULL"
+# 3. define the spin multiplicity and active space
+numl = 1 
+nao = 6
+nae = 6
+# 4. define the VB structure by yourself, same as XMVB $Str input, but just the active active
+active_orbital = [[21  22  20  23  19  24],
+          [20  21  22  23  19  24],
+          [20  21  19  22  23  24],
+          [19  20  22  23  21  24],
+          [19  20  21  22  23  24],]
+```
+      
+      
+      
+      
+      
