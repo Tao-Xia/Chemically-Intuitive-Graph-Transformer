@@ -64,10 +64,7 @@ H         0.970553       -2.285342       -0.000034
 numl = 1 
 nao = 6
 nae = 6
-# 3. Define the active orbitals, e.g.
-# active_orbital =  [5,6,4,2,1,3]
-# Each number represents the atom from which the corresponding orbital originates.
-# 4. Specify the VB structures for which you wish to predict the weights 
+# 3. Specify the VB structures for which you wish to predict the weights 
 # (more detailed information please refer to XMVB manual)
 structure=[[21  22  20  23  19  24],
           [20  21  22  23  19  24],
