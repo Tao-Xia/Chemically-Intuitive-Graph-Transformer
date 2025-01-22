@@ -32,7 +32,8 @@ nae = 6
 # Each number represents the atom from which the corresponding orbital originates.
 # 4. Define the set of VB structures (This functionality is currently supported only when used in conjunction with XMVB, more detailed information please refer to XMVB manual)
 # ('COV', '0-1', '0-2', '0-3', ...,'FULL')
-# Users can also write the VB structure by yourself. The format is the same as the $Str section in XMVB input file, but only the pairing of active orbitals are needed to provide.
+# Users can also write the VB structure by yourself.
+# The format is the same as the $Str section in XMVB input file, but only the pairing of active orbitals are needed to provide.
 ```
 After defining the molecule, active space and structure set, you can run the following command to predict the VB structure weights
 ```
@@ -66,7 +67,8 @@ nae = 6
 # 3. Define the active orbitals, e.g.
 # active_orbital =  [5,6,4,2,1,3]
 # Each number represents the atom from which the corresponding orbital originates.
-# 4. Specify the VB structures for which you wish to predict the weights (more detailed information please refer to XMVB manual)
+# 4. Specify the VB structures for which you wish to predict the weights 
+# (more detailed information please refer to XMVB manual)
 structure=[[21  22  20  23  19  24],
           [20  21  22  23  19  24],
           [20  21  19  22  23  24],
